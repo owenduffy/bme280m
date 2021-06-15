@@ -1,6 +1,7 @@
 --copy to init.lua and edit cfgdefs below
 --the values correspond to cfgvars
 cfgdefs={
+"bme280m_001",
 "",
 "",
 "4",
@@ -16,6 +17,7 @@ cfgdefs={
 }
 --no need for changes below here
 cfgvars={
+"wifi_hostname",
 "wifi_SSID",
 "wifi_password",
 "pin_scl",
