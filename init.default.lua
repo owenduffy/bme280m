@@ -36,11 +36,11 @@ cfgvars={
 
 function mqreq(opt)
   if opt==1 then
-    topic="emonhub/tx/"..nodeid.."/values"
-    payload=temperature .. "," .. humidity .. "," .. qnh
+    topic="thp/"..nodeid.."/payload"
+    payload=temperature .. "," .. humidity .. "," .. qnh.. ",\"" .. dev .. "\",\"" .. ver .. "\""
   elseif opt==2 then
-    topic="emonhub/tx/"..nodeid.."/status"
-    payload=sens_status
+    topic="thp/"..nodeid.."/status"
+    payload="fail"
   end
   print("req:"..topic..":"..payload)
   return topic,payload

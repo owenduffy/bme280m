@@ -1,7 +1,8 @@
 -- Remember to connect GPIO16 (D0) and RST for deep sleep function,
 -- better though a SB diode anode to RST cathode to GPIO16 (D0).
-
-print("bme280m")
+ver="1.03"
+dev="bme280m"
+print(dev.." v"..ver)
 
 --# Settings #
 dofile("nodevars.lua")
